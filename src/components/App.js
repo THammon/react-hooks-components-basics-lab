@@ -1,5 +1,15 @@
 import React from "react";
 
+function App(){
+  return(
+    <div>
+      <NavBar />
+      <Home />
+      <About />
+    </div>
+  )
+}
+
 function NavBar() {
   return (
     <nav>
@@ -16,17 +26,13 @@ function Home() {
   );
 }
 
-{/* write an <About> component here */}
-
-
-function App() {
-  return (
-    <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+function About() {
+  return(
+    <div id= "about">
+      <h2>About</h2>
     </div>
-  );
+  )
 }
+
 
 export default App;
